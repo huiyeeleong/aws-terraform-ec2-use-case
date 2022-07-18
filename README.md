@@ -1,1 +1,1 @@
-# aws-terraform-use-case
+# aws-terraform-ec2-use-case
