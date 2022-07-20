@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
+
+    agent { label 'master' }
+
     parameters {
         string(name: 'account', description: 'Deploy into AWS Account', defaultValue: "aws-account" )
         string(name: 'ProjectName', description: 'Provide the unique stack name. MANDATORY field.', defaultValue: 'aws-terraform-project')
