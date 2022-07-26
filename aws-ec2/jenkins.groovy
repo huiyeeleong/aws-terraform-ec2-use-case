@@ -23,8 +23,7 @@ pipeline {
                     currentBuild.displayName = "#${env.BUILD_NUMBER} - ${params.action}"
                     currentBuild.description = "Build #${env.BUILD_NUMBER} - Deploying to ${params.account} - ProjectName ${params.ProjectName} "
                     sh 'printenv'
-                    sh 'aws s3 ls'
-                    sh 'cd aws-ec2/terraform-manifest'
+                    sh 'cd aws-ec2/terraform-manifest/'
                     sh 'ls'
                 }
             }
