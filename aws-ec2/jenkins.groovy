@@ -25,6 +25,7 @@ pipeline {
                     sh 'printenv'
                     sh 'aws s3 ls'
                     sh 'cd aws-ec2/terraform-manifest'
+                    sh 'ls'
                 }
             }
         }
