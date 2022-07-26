@@ -26,7 +26,7 @@ pipeline {
                     sh 'pwd'
                     sh 'cd /var/jenkins_home/workspace/aws-ec2-terraform/aws-ec2/terraform-manifest/'
                     sh 'ls'
-                    sh 'terraform init'
+                    sh 'terraform init /var/jenkins_home/workspace/aws-ec2-terraform/aws-ec2/terraform-manifest/ '
                 }
             }
         }
