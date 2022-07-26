@@ -24,9 +24,9 @@ pipeline {
                     currentBuild.description = "Build #${env.BUILD_NUMBER} - Deploying to ${params.account} - ProjectName ${params.ProjectName} "
                     sh 'printenv'
                     sh 'pwd'
-                    sh 'cd /var/jenkins_home/workspace/aws-ec2-terraform/aws-ec2/terraform-manifest/'
-                    sh 'ls'
-                    sh 'terraform -chdir=/aws-ec2/terraform-manifest/ init'
+                    sh 'cd aws-ec2 \
+                        ls'
+                  
                 }
             }
         }
