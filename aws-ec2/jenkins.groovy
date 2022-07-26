@@ -24,8 +24,8 @@ pipeline {
                     currentBuild.description = "Build #${env.BUILD_NUMBER} - Deploying to ${params.account} - ProjectName ${params.ProjectName} "
                     sh 'printenv'
                     sh 'pwd'
-                    sh 'cd aws-ec2 \
-                        ls'
+                    sh 'cd aws-ec2'
+                    sh 'ls'
                   
                 }
             }
