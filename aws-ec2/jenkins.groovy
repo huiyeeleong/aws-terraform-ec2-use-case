@@ -24,7 +24,7 @@ pipeline {
                     currentBuild.description = "Build #${env.BUILD_NUMBER} - Deploying to ${params.account} - ProjectName ${params.ProjectName} "
                     sh 'printenv'
                     sh 'cd aws-ec2/terraform-manifest/'
-                    sh 'ls'
+                    sh 'terraform init'
                 }
             }
         }
