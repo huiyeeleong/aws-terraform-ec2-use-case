@@ -1,6 +1,6 @@
 output "elb_id" {
   description = "The name of the ELB"
-  value       = module.elb.elb_name
+  value       = module.elb.elb_name 
 }
 
 output "elb_name" {
