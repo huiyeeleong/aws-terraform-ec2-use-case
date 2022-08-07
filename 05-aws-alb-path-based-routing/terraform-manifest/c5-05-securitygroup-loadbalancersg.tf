@@ -7,7 +7,7 @@ module "loadbalancer_sg" {
   description = "Security group with HTTP port open for everybody (IPv4 CIDR), egress ports are all world open"
   vpc_id      = module.vpc.vpc_id
   # Ingress Rules & CIDR Block  
-  ingress_rules = ["http-80-tcp"]
+  ingress_rules = ["http-80-tcp", "https-443-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
   # Egress Rule - all-all open
   egress_rules = ["all-all"]
